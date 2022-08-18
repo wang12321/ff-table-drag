@@ -127,9 +127,8 @@
     },
     methods: {
       draging(e) {
-        console.log(5555555)
         e.preventDefault();
-        e.dataTransfer.dropEffect = "move"
+        e.dataTransfer.dropEffect = "move"
         this.isDraing = true;
         if (e.pageX == this.dragX && e.pageY == this.dragY) return
         this.dragX = e.pageX;
@@ -286,8 +285,6 @@
           }
         }
         pushData(curList, newList)
-        console.log(22222,newList)
-
         this.resetOrder(newList)
         this.onDrag(newList, curDragItem, taggetItem, _this.whereInsert)
         this.$emit("drag",newList, curDragItem, taggetItem, _this.whereInsert);
@@ -430,7 +427,6 @@
           }
         }
         deep(deepList);
-        console.log(deepList)
         this.data.lists = deepList
       },
       GetChildIds(id, deep=true) {
@@ -574,7 +570,6 @@
     // padding: 15px 10px;
     //background: #f5f7fa;
     border: 1px solid #EBEEF5;
-    height: 60px;
     line-height: 36px;
     box-sizing: border-box;
     font-weight: 600;

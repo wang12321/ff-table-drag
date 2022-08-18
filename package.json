@@ -1,7 +1,7 @@
 {
   "name": "ff-table-drag",
   "description": "拖拽排序的树形表格",
-  "version": "1.0.3",
+  "version": "1.0.4",
   "author": "FF",
   "license": "MIT",
   "main": "dist/ff-table-drag.js",
